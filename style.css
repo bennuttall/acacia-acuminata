@@ -57,6 +57,7 @@ h2 a, h2 a:hover {
 
 #nav, #footer {
     width: 100%;
+    min-width: 740px;
 }
 
 #nav {
