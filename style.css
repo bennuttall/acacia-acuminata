@@ -146,6 +146,7 @@ h2 a, h2 a:hover {
 }
 
 #main article footer {
+    clear: both;
     text-align: right;
 }
 
@@ -169,6 +170,10 @@ h2 a, h2 a:hover {
 
 #main article iframe {
     margin: 0 auto !important;
+}
+
+#main article .dd_post_share {
+    float: right;
 }
 
 #main article .error404 {
