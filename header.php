@@ -12,6 +12,7 @@
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width" />
     <title><?php wp_title('| ', true, 'right'); bloginfo('title'); ?></title>
+    <link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/mcrraspjam-64x64.png" />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
