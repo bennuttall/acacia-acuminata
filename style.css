@@ -61,7 +61,6 @@ h2 a, h2 a:hover {
 }
 
 #nav {
-    height: 30px;
     position: fixed;
     top: 0;
     left: 0;
@@ -106,6 +105,7 @@ h2 a, h2 a:hover {
 #nav #searchform {
     float: right;
     margin-top: 2px;
+    height: 30px;
 }
 
 #nav #searchform input {
@@ -123,6 +123,12 @@ h2 a, h2 a:hover {
     color: #fff;
     font-weight: bold;
 }
+
+#nav .break {
+    clear: both;
+    height: 0;
+}
+
 #header {
     margin-top: 40px;
     text-align: center;
@@ -202,8 +208,14 @@ h2 a, h2 a:hover {
     text-align: right;
 }
 
+#twitter-badge {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+}
+
 #footer {
-    height:100px;
+    height: 100px;
     border-top: 1px solid #60b22e;
     text-align: center;
     font-size: 12px;
@@ -218,9 +230,44 @@ h2 a, h2 a:hover {
 }
 
 #footer .sponsor img {
-    margin-top: 10px;
+    margin: 10px auto;
 }
 
 #footer .sponsor a:hover {
     background: transparent;
+}
+
+@media only screen and (max-width: 760px) {
+    body {
+        background: #fff;
+    }
+
+    #nav {
+        position: static;
+        min-width: 0;
+        min-height: 30px;
+    }
+
+    #nav .nav-holder, #nav ul {
+        max-width: 100%;
+    }
+
+    #header, #main article, #main #prevnext {
+        width: 98%;
+        border: 0;
+        padding: 1%;
+        min-width: 0;
+    }
+
+    #header {
+        margin-top: 10px;
+    }
+
+    #twitter-badge {
+        position: static;
+    }
+
+    #footer {
+        min-width: 0;
+    }
 }
