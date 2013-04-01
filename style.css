@@ -1,6 +1,6 @@
 /*
     Theme Name: Acacia Acuminata
-    Theme URI: http://www.mcrraspjam.org.uk/
+    Theme URI: https://github.com/bennuttall/Acacia-Acuminata
     Author: Ben Nuttall
     Author URI: http://www.bennuttall.com/
     Description: Theme for the Manchester Raspberry Jam website
@@ -210,8 +210,12 @@ h2 a, h2 a:hover {
 
 #twitter-badge {
     position: fixed;
-    top: 60px;
+    top: 40px;
     right: 20px;
+}
+
+.logged-in #twitter-badge {
+    top: 68px;
 }
 
 #footer {
@@ -229,12 +233,13 @@ h2 a, h2 a:hover {
     margin: 0;
 }
 
-#footer .sponsor img {
+#footer #bytemark {
+    background: #fff url('images/bytemark.png');
+    height: 31px;
+    width: 411px;
     margin: 10px auto;
-}
-
-#footer .sponsor a:hover {
-    background: transparent;
+    display: block;
+    text-indent: -10000px;
 }
 
 @media only screen and (max-width: 760px) {
@@ -263,11 +268,22 @@ h2 a, h2 a:hover {
         margin-top: 10px;
     }
 
-    #twitter-badge {
-        position: static;
-    }
-
     #footer {
         min-width: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    #footer #bytemark {
+        width: 235px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    #twitter-badge {
+        position: static;
+        text-align: center;
     }
 }
