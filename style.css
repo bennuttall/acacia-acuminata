@@ -97,8 +97,16 @@ h2 a, h2 a:hover {
     color: #60b22e;
 }
 
-#nav ul li:hover, #nav ul li:hover a {
-    color: #fff;
+#nav ul li:hover, #nav ul li:hover a,
+.home #menu-item-118, .home #menu-item-118 a,
+.archive #menu-item-118, .archive #menu-item-118 a,
+.single-post #menu-item-118, .single-post #menu-item-118 a,
+.page-id-6 #menu-item-13, .page-id-6 #menu-item-13 a,
+.page-id-8 #menu-item-12, .page-id-8 #menu-item-12 a,
+.page-id-10 #menu-item-11, .page-id-10 #menu-item-11 a,
+.page-id-37 #menu-item-38, .page-id-37 #menu-item-38 a
+{
+    color: #fff !important;
     background: #60b22e;
 }
 
