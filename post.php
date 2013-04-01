@@ -12,9 +12,3 @@
     <?php endif; ?>
     </footer>
 </article>
-<?php if (is_singular('post')): ?>
-<aside id="prevnext">
-    <nav id="prev"><?php previous_post_link(); ?></nav>
-    <nav id="next"><?php next_post_link(); ?></nav>
-</aside>
-<?php endif; ?>

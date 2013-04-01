@@ -198,6 +198,7 @@ h2 a, h2 a:hover {
 
 #main #prevnext {
     height: 20px;
+    min-height: 20px;
     padding: 5px 20px;
 }
 
