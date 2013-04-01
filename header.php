@@ -28,7 +28,6 @@
     <div class="nav-holder">
     <?php wp_nav_menu(array('theme_location' => 'nav_bar', 'container' => false)); ?>
     <?php get_search_form(); ?>
-    <div class="break">&nbsp;</div>
     </div>
 </nav>
 <header id="header">
