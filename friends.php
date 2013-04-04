@@ -10,7 +10,7 @@ $friends = new WP_Query($args);
 
 ?>
 <aside id="friends">
-<h2><a href="/links/">Friends of Manchester Raspberry Jam</a></h2>
+<h2><a href="/links/#friends">Friends of Manchester Raspberry Jam</a></h2>
 <div class="logos">
 <?php while ($friends->have_posts()):
     $friends->the_post();
