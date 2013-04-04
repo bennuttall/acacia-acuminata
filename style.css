@@ -27,13 +27,13 @@ a:hover {color: #fff; background: #d4264e;}
 h1 {font-size: 36px; font-weight: normal;}
 h2 {font-size: 22px; font-weight: normal;}
 
-#nav, #header, #footer, #main article, #main #prevnext {
+#nav, #header, #footer, #main article, #main #prevnext, #friends {
     background-color: #fff;
     background-color: rgba(255,255,255,0.9);
     margin: 0 auto;
 }
 
-#header, #main article, #main #prevnext {
+#header, #main article, #main #prevnext, #friends {
     width: 700px;
     padding: 20px;
     border: 1px solid #60b22e;
@@ -215,6 +215,30 @@ h2 a, h2 a:hover {
     text-align: right;
 }
 
+#friends {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#friends a {
+    margin: 0 5px;
+}
+
+#friends .logos a:hover {
+    background: transparent;
+}
+
+#friends .dd_post_share {
+    display: none;
+}
+
+#friends p {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
 #twitter-badge {
     position: fixed;
     top: 40px;
@@ -287,7 +311,7 @@ h2 a, h2 a:hover {
     }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1150px) {
 
     #twitter-badge {
         position: static;
