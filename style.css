@@ -26,6 +26,7 @@ a:hover {color: #fff; background: #d4264e;}
 
 h1 {font-size: 36px; font-weight: normal;}
 h2 {font-size: 22px; font-weight: normal;}
+h2 {font-size: 20px; font-weight: normal;}
 
 #nav, #header, #footer, #main article, #main #prevnext, #friends {
     background-color: #fff;
@@ -232,11 +233,15 @@ h2 a, h2 a:hover {
     display: none;
 }
 
+#friends h3 {
+    color: #60b22e;
+}
+
 #friends p {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 10px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #60b22e;
 }
 
 #twitter-badge {
