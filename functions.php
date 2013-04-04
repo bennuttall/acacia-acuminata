@@ -15,13 +15,24 @@ function create_friends_post_type() {
     register_post_type('friends',
         array(
             'labels' => array(
-                'name' => __('Friends'),
-                'singular_name' => __('Friend')
+                'name' => 'Friends',
+                'singular_name' => 'Friend',
+                'add_new' => 'Add New',
+                'add_new_item' => 'Add New Friend',
+                'edit_item' => 'Edit Friend',
+                'new_item' => 'New Friend',
+                'all_items' => 'All Friends',
+                'view_item' => 'View Friend',
+                'search_items' => 'Search Friends',
+                'not_found' =>  'No Friends Found',
+                'not_found_in_trash' => 'No Friends found in Trash', 
+                'menu_name' => 'Friends',
                 ),
             'public' => true,
             'has_archive' => false,
             'rewrite' => array('slug' => 'friend'),
             'supports' => array('title', 'excerpt', 'thumbnail'),
+
             )
     );
 
