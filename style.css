@@ -24,9 +24,15 @@ a:link {color: #d4264e; text-decoration: none;}
 a:visited {color: #60b22e;}
 a:hover {color: #fff; background: #d4264e;}
 
-h1 {font-size: 36px; font-weight: normal;}
-h2 {font-size: 22px; font-weight: normal;}
-h2 {font-size: 20px; font-weight: normal;}
+h1, h2, h3, h4, h5, h6 {
+    color: #d4264e;
+    font-weight: normal;
+}
+
+h1 {font-size: 36px;}
+h2 {font-size: 22px;}
+h3 {font-size: 20px;}
+h4 {font-size: 18px;}
 
 #nav, #header, #footer, #main article, #main #prevnext, #friends {
     background-color: #fff;
