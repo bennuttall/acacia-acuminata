@@ -299,7 +299,7 @@ h2 a, h2 a:hover {
         max-width: 100%;
     }
 
-    #header, #main article, #main #prevnext {
+    #header, #main article, #main #prevnext, #friends {
         width: 98%;
         border: 0;
         padding: 1%;
