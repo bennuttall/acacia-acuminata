@@ -1,7 +1,7 @@
 <article>
     <header>
         <?php if (!is_page()): ?>
-        <date><?php the_date(); ?></date>
+        <date><?php echo get_the_date(); ?></date>
         <?php endif; ?>
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
     </header>
