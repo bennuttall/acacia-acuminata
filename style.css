@@ -253,7 +253,7 @@ h2 a, h2 a:hover {
 #twitter-badge {
     position: fixed;
     top: 40px;
-    right: 20px;
+    right: 0;
 }
 
 .logged-in #twitter-badge {
@@ -322,7 +322,7 @@ h2 a, h2 a:hover {
     }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1350px) {
 
     #twitter-badge {
         position: static;
