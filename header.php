@@ -24,13 +24,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<nav id="nav">
-    <div class="nav-holder">
-    <?php wp_nav_menu(array('theme_location' => 'nav_bar', 'container' => false)); ?>
-    <?php get_search_form(); ?>
-    <div class="break">&nbsp;</div>
-    </div>
-</nav>
+<?php get_template_part('nav'); ?>
 <header id="header">
     <h1><a href="/"><?php bloginfo('title'); ?></a></h1>
     <em><?php bloginfo('description'); ?></em>
