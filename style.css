@@ -335,6 +335,7 @@ h2 a, h2 a:hover {
 
     #twitter-badge {
         position: static;
+        clear: both;
         text-align: center;
         margin: 10px auto;
     }
