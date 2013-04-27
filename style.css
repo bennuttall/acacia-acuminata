@@ -189,8 +189,14 @@ h2 a, h2 a:hover {
     margin: 0 auto;
 }
 
+#main article img {
+    max-width: 100%;
+    height: auto;
+}
+
 #main article iframe {
     margin: 0 auto !important;
+    max-width: 100%;
 }
 
 #main article .dd_post_share {
@@ -254,7 +260,9 @@ h2 a, h2 a:hover {
 #twitter-badge {
     position: fixed;
     top: 40px;
-    right: 0;
+    right: 10px;
+    width: 280px;
+    overflow: hidden;
 }
 
 .logged-in #twitter-badge {
@@ -328,5 +336,6 @@ h2 a, h2 a:hover {
     #twitter-badge {
         position: static;
         text-align: center;
+        margin: 10px auto;
     }
 }
