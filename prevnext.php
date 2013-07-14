@@ -7,5 +7,6 @@
     <nav id="prev"><?php previous_posts_link(); ?></nav>
     <nav id="next"><?php next_posts_link(); ?></nav>
     <?php endif; ?>
+    <div style="clear:both;"></div>
 </aside>
 <?php endif; ?>
