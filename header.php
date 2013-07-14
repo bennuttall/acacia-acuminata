@@ -9,9 +9,9 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
+    <title><?php wp_title('| ', true, 'right'); bloginfo('title'); ?></title>
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width" />
-    <title><?php wp_title('| ', true, 'right'); bloginfo('title'); ?></title>
     <link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/mcrraspjam-64x64.png" />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -19,7 +19,8 @@
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
     <![endif]-->
-    <link href="<?php bloginfo('template_url'); ?>/style.css?v=1.6" rel="stylesheet" />
+    <link href="<?php timestamped_stylesheet(); ?>" rel="stylesheet" />         
+    <link href="<?php timestamped_stylesheet('mobile.css'); ?>" rel="stylesheet" />
     <?php wp_head(); ?>
 </head>
 
