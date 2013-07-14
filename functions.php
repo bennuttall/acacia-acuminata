@@ -43,6 +43,12 @@ function create_friends_post_type() {
 
 // Custom functions
 
+function timestamped_stylesheet($stylesheet='style.css') {
+    $stylesheet_url = get_bloginfo('template_url') . '/' . $stylesheet;
+    $stylesheet_path = get_stylesheet_directory() . '/' . $stylesheet;
+    echo $stylesheet_url . "?" . filemtime($stylesheet_path);
+}
+
 function show_tag_list ($id, $separator, $before) {
     $tags = wp_get_post_tags($id);
 
@@ -76,4 +82,13 @@ function random_404_message() {
     );
 
     echo $messages[$random_2];
+}
+
+function meta_description() {
+    if (is_single()) {
+        echo get_the_excerpt();
+    }
+    else {
+        echo "Manchester Raspberry Pi user group based at MadLab";
+    }
 }

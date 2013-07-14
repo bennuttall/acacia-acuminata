@@ -10,6 +10,7 @@
 <!--<![endif]-->
 <head>
     <title><?php wp_title('| ', true, 'right'); bloginfo('title'); ?></title>
+    <meta name="description" content="<?php meta_description(); ?>" />
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/mcrraspjam-64x64.png" />
