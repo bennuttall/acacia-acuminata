@@ -17,7 +17,7 @@ $friends = new WP_Query($args);
     $thumbnail_args = array('title' => get_the_title());
 ?>
 <h3><?php the_title(); ?></h3>
-<a href="<?php echo get_field('url'); ?>"><?php the_post_thumbnail('friend_thumb', $thumbnail_args); ?></a>
+<a href="<?php the_field('url'); ?>" target="_blank"><?php the_post_thumbnail('friend_thumb', $thumbnail_args); ?></a>
 <?php the_excerpt(); ?>
 <?php endwhile; ?>
 </div>
