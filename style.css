@@ -178,9 +178,9 @@ h2 a, h2 a:hover {
 #main article blockquote {
     width: 80%;
     margin: 0 auto;
+    padding: 20px 10px;
     font-size: 20px;
     text-align: justify;
-    padding: 0 10px;
     font-style: italic;
 }
 
@@ -191,6 +191,7 @@ h2 a, h2 a:hover {
 
 #main article img, #main article iframe {
     margin: 0 auto !important;
+    padding: 20px 0;
 }
 
 #main article .dd_post_share {
