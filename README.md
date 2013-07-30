@@ -1,4 +1,4 @@
-[![Stories in Ready](http://badge.waffle.io/bennuttall/acacia-acuminata.png)](http://waffle.io/bennuttall/acacia-acuminata)  
+[![Stories in Ready](https://badge.waffle.io/bennuttall/acacia-acuminata.png)](http://waffle.io/bennuttall/acacia-acuminata)  
 # Acacia Acuminata
 
 Wordpress Theme for Manchester Raspberry Jam Website
