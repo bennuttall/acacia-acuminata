@@ -190,10 +190,6 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
     padding: 20px 0;
 }
 
-#main article .dd_post_share {
-    float: right;
-}
-
 #main article .error404 {
     background: url('images/mcrraspjam-rotated.png');
     width: 500px;
@@ -239,10 +235,6 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
 
 #friends .friend a:hover {
     background: transparent;
-}
-
-#friends .dd_post_share {
-    display: none;
 }
 
 #friends h3 {
