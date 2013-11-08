@@ -185,6 +185,7 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
 }
 
 #main article img, #main article iframe {
+    display: block;
     margin: 0 auto !important;
     padding: 20px 0;
 }
@@ -228,7 +229,15 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
     margin: 0 5px;
 }
 
-#friends .logos a:hover {
+#friends .friend {
+    width: 44%;
+    height: 200px;
+    margin: 10px 3%;
+    float: left;
+    border-bottom: 1px solid #60b22e;
+}
+
+#friends .friend a:hover {
     background: transparent;
 }
 
@@ -244,7 +253,6 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 10px;
-    border-bottom: 1px solid #60b22e;
 }
 
 #twitter-badge {
