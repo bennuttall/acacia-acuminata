@@ -1,8 +1,8 @@
 <?php
 
 // Image sizes
-add_image_size('friend_thumb', 100, 100, false);
 set_post_thumbnail_size(100, 100);
+add_image_size('friend_thumb', 100, 100, false);
 
 // Menus
 register_nav_menu('nav_bar', 'Nav Bar');
@@ -25,20 +25,17 @@ function create_friends_post_type() {
                 'view_item' => 'View Friend',
                 'search_items' => 'Search Friends',
                 'not_found' =>  'No Friends Found',
-                'not_found_in_trash' => 'No Friends found in Trash', 
+                'not_found_in_trash' => 'No Friends found in Trash',
                 'menu_name' => 'Friends',
-                ),
+            ),
             'public' => true,
             'has_archive' => false,
             'rewrite' => array('slug' => 'friend'),
             'supports' => array('title', 'excerpt', 'thumbnail'),
-
-            )
+        )
     );
 
     add_theme_support('post-thumbnails', array('friends'));
-
-    flush_rewrite_rules(false);
 }
 
 // Custom functions
@@ -86,7 +83,7 @@ function random_404_message() {
 
 function meta_description() {
     if (is_single()) {
-        echo get_the_excerpt();
+        the_excerpt();
     }
     else {
         echo "Manchester Raspberry Pi user group based at MadLab";
