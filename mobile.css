@@ -1,6 +1,7 @@
 @media only screen and (max-width: 760px) {
     body {
-        background: #fff;
+        min-width:320px;
+        background-image:none;
     }
 
     #nav {
