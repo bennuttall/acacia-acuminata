@@ -1,47 +1,78 @@
-@media only screen and (max-width: 760px) {
+/*      MDPi PC     */
+@media (max-width:2000px){
+    #header, #main article, #main #prevnext, #friends {
+        width: 750px;
+    }
+}
+
+/*      LDPi PC     */
+@media (max-width:1440px){
+    body{
+        font-size:10pt;
+    }
+    #header, #main article, #main #prevnext, #friends {
+        width: 700px;
+    }
+}
+
+/*      Tablet Large     */
+@media (max-width:1024px){
     body {
-        min-width:320px;
+        background-color: #eee;
         background-image:none;
     }
+    #header, #main article, #main #prevnext, #friends {
+        width: 650px;
+    }
+}
 
-    #nav {
-        position: static;
-        min-width: 0;
-        min-height: 30px;
+@media (max-width:720px){
+    #header, #main article, #main #prevnext, #friends {
+            width: 90vw;
+    }
+}
+
+/*      Phone       */
+
+@media only screen and (max-width: 600px)
+{    
+    #nav
+    {
+        position:static;
+        min-height:32px;
+        max-height:96px;
+        height:auto;
     }
 
     #nav .nav-holder, #nav ul {
         max-width: 100%;
     }
 
-    #header, #main article, #main #prevnext, #friends {
-        width: 98%;
-        border: 0;
-        padding: 1%;
-        min-width: 0;
-    }
-
-    #main article img {
-        max-width: 100%;
-        height: auto;
+    #header
+    {
+        margin-top:0;
+        padding-top:16px;
+        background-image:none;
     }
 
     #main article iframe {
         width: 100%;
     }
-
-    #header {
-        margin-top: 10px;
-    }
-
-    #footer {
-        min-width: 0;
-    }
 }
 
 @media only screen and (max-width: 450px) {
-
+    #header h1 {
+        font-size: 8vw;
+    }
+    #header em {
+    font-size: 12px;
+    }
     #footer #bytemark {
         width: 235px;
     }
 }
+
+.robots-nocontent.sd-block.sd-social.sd-social-icon.sd-sharing {
+    display: none;
+}
+

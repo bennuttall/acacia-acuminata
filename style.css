@@ -10,31 +10,28 @@
     Text Domain: mcrraspjam
 */
 
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-body 
-{
-    font-family: 'Ubuntu', sans-serif;
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
     font-size: 12pt;
     color: #333;
     background-color: #eee;
-    background: url(http://jackjkelly.com/css/bkg_jam.jpg) center fixed;
+    background: url(http://mcrraspjam.org.uk/wp-content/uploads/2016/10/bkg_jam.jpg) center fixed;
     background-size: cover;
-    margin: 0;
 }
 
 
 /*      Text Formatting     */
 
 
-a
-{
+a{
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6
-{
+h1, h1 a, h2, h2 a, h3, h4, h5, h6 {
     color:#e03e61;
     font-weight: normal;
 }
@@ -48,74 +45,19 @@ h4 {font-size: 1.1em;}
 /*      Navbar      */
 
 
-#nav
-{
+#nav {
     background-color: #e03e61;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
     position: fixed;
     top: 0;
     left: 0;
-    
-}
-
-/* Content Frame */
-
-#header, #footer, #main article, #main #prevnext, #friends {
-    background-color: #fff;
-    background-color: rgba(255,255,255,0.9);
-    margin: 0 auto;
-}
-
-#header, #main article, #main #prevnext, #friends {
-    width: 30vw;
-    padding: 20px;
-    border-left: 1px solid #c0c0c0;
-    border-left: 1px solid rgba(0, 0, 0, 0.25);
-    border-right: 1px solid #c0c0c0;
-    border-right: 1px solid rgba(0, 0, 0, 0.25);
-}
-
-@media (max-width:2200px)
-{
-    #header, #main article, #main #prevnext, #friends
-    {
-    width: 50vw;
-    }
-}
-@media (max-width:1200px)
-{
-    #header, #main article, #main #prevnext, #friends
-    {
-    width: 70vw;
-    }
-}
-@media (max-width:800px)
-{
-    #header, #main article, #main #prevnext, #friends
-    {
-    width: 90vw;
-    }
-}
-
-/*      Other Stuff?        */
-
-h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
-    text-decoration: none;
-    color: #d4264e;
-    margin: 0 0 10px;
-}
-
-#nav, #footer {
-    width: 100%;
-    min-width: 740px;
-}
-
-.logged-in #nav {
-    top: 32px;
+    width: 100%;  
+    height:32px;  
 }
 
 #nav .nav-holder {
-    width: 740px;
+    width:auto;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -128,11 +70,11 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
 #nav ul li {
     float: left;
     list-style-type: none;
-    font-size: 18px;
-    text-transform: uppercase;
+    margin-top:2px;
+    font-size: 16px;
     letter-spacing: 1px;
     padding: 4px 10px;
-    height: 24px;
+    height: 22px;
 }
 
 #nav ul li a, #nav ul li a:visited {
@@ -147,15 +89,14 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
 .page-id-6 #menu-item-13, .page-id-6 #menu-item-13 a,
 .page-id-8 #menu-item-12, .page-id-8 #menu-item-12 a,
 .page-id-10 #menu-item-11, .page-id-10 #menu-item-11 a,
-.page-id-37 #menu-item-38, .page-id-37 #menu-item-38 a
-{
+.page-id-37 #menu-item-38, .page-id-37 #menu-item-38 a {
     background: #ED4267;
 }
 
 #nav #searchform {
     float: right;
-    margin-top: 2px;
-    height: 32px;   /*actual height */
+    margin-top: 4px;
+    height: 28px;
 }
 
 #nav #searchform input {
@@ -180,6 +121,30 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
     height: 0;
 }
 
+.logged-in #nav {
+    top: 32px;
+}
+
+
+/* Content Frame */
+
+
+#header, #footer, #main article, #main #prevnext, #friends {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
+    margin: 0 auto;
+}
+
+#header, #main article, #main #prevnext, #friends {
+    /*width: 35vw;*/
+    width: 900px;
+    padding: 20px;
+    border-left: 1px solid #c0c0c0;
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    border-right: 1px solid #c0c0c0;
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
 
 /*     Page Header      */
 
@@ -189,7 +154,6 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
     text-align: center;
     padding: 20px;
     padding-bottom: 32px;
-
     padding-top:132px;
     background-image: url(http://mcrraspjam.org.uk/wp-content/uploads/2016/10/logo-128.png);
     background-position: center 8px;
@@ -208,6 +172,9 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
     font-size: 16px;
     font-style: normal;
 }
+
+
+/*      Articles        */
 
 
 #main {
@@ -234,10 +201,10 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
 #main article footer {
     clear: both;
     text-align: right;
-    margin: 5px 4vw;
+    margin: 10px 4vw;
 }
 
-#main article p {
+#main article p, #main article ul{
     margin: 5px 4vw;
     text-align: justify;
 }
@@ -292,13 +259,8 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
 
 .autoimageformat
 {
-    max-width:100%;
-    height:30vh;
-    width:auto;
-    /*
-    width: 80%;
+    width:100%;
     height:auto;
-    */
 }
 
 /*      Footer 1        */
