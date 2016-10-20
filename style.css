@@ -1,79 +1,64 @@
 /*
     Theme Name: Acacia Acuminata
-    Theme URI: https://github.com/bennuttall/acacia-acuminata
+    Theme URI: https://github.com/McrRaspJam/acacia-acuminata
     Author: Ben Nuttall
     Author URI: http://www.bennuttall.com/
+    Modified by: Jack Kelly
     Description: Theme for the Manchester Raspberry Jam website
-    Version: 1.0
+    Version: 2.1
     License: GNU General Public License v2 or later
     License URI: http://www.gnu.org/licenses/gpl-2.0.html
     Text Domain: mcrraspjam
 */
 
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
+    margin: 0;
     color: #000;
-    background: #fff url('images/mcrraspjam-tiled.png') top center fixed;
-    margin: 0
+    background-color: #eee;
+    background: url(http://mcrraspjam.org.uk/wp-content/uploads/2016/10/bkg_jam.jpg) center fixed;
+    background-size: cover;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    font-weight:300;
 }
 
-a:link {color: #d4264e; text-decoration: none;}
-a:visited {color: #60b22e;}
-a:hover {text-decoration: underline;}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #d4264e;
-    font-weight: normal;
+h1, h1 a, h2, h2 a, h3, h4, h5, h6 {
+    color:#e03e61;
+    font-weight: 400;
 }
 
-h1 {font-size: 36px;}
-h2 {font-size: 22px;}
-h3 {font-size: 20px;}
-h4 {font-size: 18px;}
+h1 {
+    font-size: 2.5em;
+    margin:0;
+    font-family: 'Oswald', sans-serif;
+} 
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.25em;}
+h4 {font-size: 1.1em;}
 
-h1 a:hover {
+a {
     text-decoration: none;
 }
 
-#nav, #header, #footer, #main article, #main #prevnext, #friends {
-    background-color: #fff;
-    background-color: rgba(255,255,255,0.9);
-    margin: 0 auto;
-}
-
-#header, #main article, #main #prevnext, #friends {
-    width: 700px;
-    padding: 20px;
-    border: 1px solid #60b22e;
-}
-
-h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
-    text-decoration: none;
-    color: #d4264e;
-    margin: 0 0 10px;
-}
-
-#nav, #footer {
-    width: 100%;
-    min-width: 740px;
-}
+/*  Navbar  */
 
 #nav {
+    background-color: #e03e61;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
     position: fixed;
     top: 0;
     left: 0;
-    border-bottom: 1px solid #60b22e;
-}
-
-.logged-in #nav {
-    top: 32px;
+    width: 100%;  
+    height:32px;  
 }
 
 #nav .nav-holder {
-    width: 740px;
+    width:auto;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -86,8 +71,8 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
 #nav ul li {
     float: left;
     list-style-type: none;
-    font-size: 18px;
-    text-transform: uppercase;
+    margin-top:2px;
+    font-size: 16px;
     letter-spacing: 1px;
     padding: 4px 10px;
     height: 22px;
@@ -95,7 +80,7 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
 
 #nav ul li a, #nav ul li a:visited {
     text-decoration: none;
-    color: #60b22e;
+    color: #fff;
 }
 
 #nav ul li:hover, #nav ul li:hover a,
@@ -105,20 +90,19 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
 .page-id-6 #menu-item-13, .page-id-6 #menu-item-13 a,
 .page-id-8 #menu-item-12, .page-id-8 #menu-item-12 a,
 .page-id-10 #menu-item-11, .page-id-10 #menu-item-11 a,
-.page-id-37 #menu-item-38, .page-id-37 #menu-item-38 a
-{
-    color: #fff !important;
-    background: #60b22e;
+.page-id-37 #menu-item-38, .page-id-37 #menu-item-38 a {
+    background: #ED4267;
 }
 
 #nav #searchform {
     float: right;
-    margin-top: 2px;
+    margin-top: 4px;
     height: 28px;
 }
 
 #nav #searchform input {
-    border: 1px solid #60b22e;
+    border: 1px solid #C93857;
+    border-radius:2px;
     height: 22px;
 }
 
@@ -128,7 +112,7 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
 }
 
 #nav #searchform input[type="submit"] {
-    background: #60b22e;
+    background: #D43B5C;
     color: #fff;
     font-weight: bold;
 }
@@ -138,38 +122,75 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
     height: 0;
 }
 
+.logged-in #nav {
+    top: 32px;
+}
+
+/*  Responsive Margin Defaults  */
+
+#header, #main article, #main #prevnext, #friends {
+    width: 1000px;
+}
+
+#main article h1, #main article h2, #main article h3, #main article h4{
+    margin: 5px 160px;
+}
+
+#main article date, #main article footer, #main article p, #main article ul {
+    margin: 0 160px;
+}
+
+#main article p, #main article ul
+{
+    margin: 16px 160px;
+    line-height:1.5;
+}
+
+/*  Content Body    */
+
+#header, #footer, #main article, #main #prevnext, #friends {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
+    margin: 0 auto;
+}
+
+#header, #main article, #main #prevnext, #friends {
+    padding: 20px;
+    border-left: 1px solid #c0c0c0;
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    border-right: 1px solid #c0c0c0;
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
 #header {
-    margin-top: 40px;
+    margin-top: 32px;
     text-align: center;
     padding: 20px;
+    padding-bottom: 0;
+    padding-top:138px;
+    background-image: url(http://mcrraspjam.org.uk/wp-content/uploads/2016/10/logo-128.png);
+    background-position: center 10px;
+    background-repeat: no-repeat;
+    line-height:1.25;
 }
 
 #header em {
-    font-size: 20px;
-    color: #60b22e;
+    font-size: 1.25em;
+    font-style: normal;
+    font-family: 'Oswald', sans-serif;
+    color:#777;
 }
 
-#main {
-    margin: 10px auto;
+#main article header {
+    margin-top:5vh;
 }
 
-#main article {
-    margin: 10px auto;
+#main article p, #main article ul{
+    line-height: 1.35;
+    text-align: justify;
 }
 
-#main article header date, #main article footer {
-    font-size: 12px;
-}
-
-#main article footer {
-    clear: both;
-    text-align: right;
-}
-
-#main article p {
-    margin: 5px 0;
-}
-
+/*
 #main article blockquote {
     width: 80%;
     margin: 0 auto;
@@ -179,15 +200,22 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
     font-style: italic;
 }
 
+
 #main article .aligncenter {
     display: block;
     margin: 0 auto;
 }
+*/
 
 #main article img, #main article iframe {
     display: block;
-    margin: 0 auto !important;
-    padding: 20px 0;
+    margin: 4px auto !important;
+}
+
+.autoimageformat{
+    width:90%;
+    height:auto;
+    border-radius: 4px;
 }
 
 #main article .error404 {
@@ -197,7 +225,14 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
     margin: 0 auto;
 }
 
+#main article footer {
+    font-size:0.8em;
+    clear: both;
+    text-align: right;
+}
+
 #main #prevnext {
+    font-size:0.8em;
     height: 100%;
     min-height: 20px;
     padding: 5px 20px;
@@ -216,8 +251,11 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
     text-align: right;
 }
 
+/*  Footer  */
+
 #friends {
-    margin-top: 10px;
+    margin-top: 0px;
+    padding-top: 32px;
     text-align: center;
 }
 
@@ -249,7 +287,8 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
 
 #footer {
     height: 100px;
-    border-top: 1px solid #60b22e;
+    border-top: 1px solid #c0c0c0;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
     text-align: center;
     font-size: 12px;
 }
@@ -263,7 +302,7 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
 }
 
 #footer #bytemark {
-    background: #fff url('images/bytemark.png');
+    background: url('images/bytemark.png');
     height: 31px;
     width: 411px;
     margin: 10px auto;
