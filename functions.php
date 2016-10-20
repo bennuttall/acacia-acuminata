@@ -86,6 +86,6 @@ function meta_description() {
         the_excerpt();
     }
     else {
-        echo "Manchester Raspberry Pi user group based at MadLab";
+        echo "Manchester Raspberry Pi user group based at The Shed";
     }
 }
