@@ -1,41 +1,50 @@
 /*
     Theme Name: Acacia Acuminata
-    Theme URI: https://github.com/bennuttall/acacia-acuminata
+    Theme URI: https://github.com/McrRaspJam/acacia-acuminata
     Author: Ben Nuttall
     Author URI: http://www.bennuttall.com/
+    Modified by: Jack Kelly
     Description: Theme for the Manchester Raspberry Jam website
-    Version: 1.0
+    Version: 2.1
     License: GNU General Public License v2 or later
     License URI: http://www.gnu.org/licenses/gpl-2.0.html
     Text Domain: mcrraspjam
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12pt;
-    color: #333;
+    color: #000;
     background-color: #eee;
     background: url(http://mcrraspjam.org.uk/wp-content/uploads/2016/10/bkg_jam.jpg) center fixed;
     background-size: cover;
-}
 
-a{
-    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    font-weight:300;
 }
 
 h1, h1 a, h2, h2 a, h3, h4, h5, h6 {
     color:#e03e61;
-    font-weight: normal;
+    font-weight: 400;
 }
 
-h1 {font-size: 2.5em;}
+h1 {
+    font-size: 2.5em;
+    margin:0;
+    font-family: 'Oswald', sans-serif;
+} 
 h2 {font-size: 1.5em;}
 h3 {font-size: 1.25em;}
 h4 {font-size: 1.1em;}
+
+a {
+    text-decoration: none;
+}
+
+/*  Navbar  */
 
 #nav {
     background-color: #e03e61;
@@ -117,6 +126,28 @@ h4 {font-size: 1.1em;}
     top: 32px;
 }
 
+/*  Responsive Margin Defaults  */
+
+#header, #main article, #main #prevnext, #friends {
+    width: 1000px;
+}
+
+#main article h1, #main article h2, #main article h3, #main article h4{
+    margin: 5px 160px;
+}
+
+#main article date, #main article footer, #main article p, #main article ul {
+    margin: 0 160px;
+}
+
+#main article p, #main article ul
+{
+    margin: 16px 160px;
+    line-height:1.5;
+}
+
+/*  Content Body    */
+
 #header, #footer, #main article, #main #prevnext, #friends {
     background-color: #fff;
     background-color: rgba(255,255,255,0.9);
@@ -124,8 +155,6 @@ h4 {font-size: 1.1em;}
 }
 
 #header, #main article, #main #prevnext, #friends {
-    /*width: 35vw;*/
-    width: 900px;
     padding: 20px;
     border-left: 1px solid #c0c0c0;
     border-left: 1px solid rgba(0, 0, 0, 0.25);
@@ -134,65 +163,34 @@ h4 {font-size: 1.1em;}
 }
 
 #header {
-    margin-top: 34px;
+    margin-top: 32px;
     text-align: center;
     padding: 20px;
     padding-bottom: 0;
     padding-top:138px;
     background-image: url(http://mcrraspjam.org.uk/wp-content/uploads/2016/10/logo-128.png);
-    background-position: center 12px;
+    background-position: center 10px;
     background-repeat: no-repeat;
-}
-
-
-
-#header h1{
-    margin:0;
-    font-family: 'Oswald', sans-serif;
-    color:#e03e61;
+    line-height:1.25;
 }
 
 #header em {
-    font-size: 16px;
+    font-size: 1.25em;
     font-style: normal;
-}
-
-#main {
-    margin: 0px auto;
-}
-
-#main article {
-    margin: 0px auto;
+    font-family: 'Oswald', sans-serif;
+    color:#777;
 }
 
 #main article header {
     margin-top:5vh;
 }
 
-#main article date {
-    margin: 5px 4vw;
-}
-
-#main article h1, #main article h2, #main article h3, #main article h4{
-    margin: 5px 4vw;
-}
-
-#main article header date, #main article footer, {
-    font-size: 12px;
-    margin: 5px 4vw;
-}
-
-#main article footer {
-    clear: both;
-    text-align: right;
-    margin: 10px 4vw;
-}
-
 #main article p, #main article ul{
-    margin: 5px 4vw;
+    line-height: 1.35;
     text-align: justify;
 }
 
+/*
 #main article blockquote {
     width: 80%;
     margin: 0 auto;
@@ -202,15 +200,22 @@ h4 {font-size: 1.1em;}
     font-style: italic;
 }
 
+
 #main article .aligncenter {
     display: block;
     margin: 0 auto;
 }
+*/
 
 #main article img, #main article iframe {
     display: block;
-    margin: 0 auto !important;
-    padding: 20px 0;
+    margin: 4px auto !important;
+}
+
+.autoimageformat{
+    width:90%;
+    height:auto;
+    border-radius: 4px;
 }
 
 #main article .error404 {
@@ -220,7 +225,14 @@ h4 {font-size: 1.1em;}
     margin: 0 auto;
 }
 
+#main article footer {
+    font-size:0.8em;
+    clear: both;
+    text-align: right;
+}
+
 #main #prevnext {
+    font-size:0.8em;
     height: 100%;
     min-height: 20px;
     padding: 5px 20px;
@@ -239,11 +251,7 @@ h4 {font-size: 1.1em;}
     text-align: right;
 }
 
-.autoimageformat
-{
-    width:100%;
-    height:auto;
-}
+/*  Footer  */
 
 #friends {
     margin-top: 0px;

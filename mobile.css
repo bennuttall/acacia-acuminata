@@ -1,34 +1,65 @@
 /*      MDPi PC     */
-@media (max-width:2000px){
+@media (max-width:2000px)
+{
     #header, #main article, #main #prevnext, #friends {
-        width: 750px;
+        width: 800px;
+    }
+    #main article h1, #main article h2, #main article h3, #main article h4 {
+        margin: 5px 100px;
+    }
+    #main article date, #main article footer, #main article p, #main article ul {
+        margin: 0 100px;
+    }
+    #main article p, #main article ul {
+        margin: 16px 100px;
     }
 }
 
 /*      LDPi PC     */
-@media (max-width:1440px){
-    body{
-        font-size:10pt;
+@media (max-width:1440px)
+{
+    body {
+        font-size:12pt;
     }
     #header, #main article, #main #prevnext, #friends {
         width: 700px;
     }
+    #main article h1, #main article h2, #main article h3, #main article h4 {
+        margin: 5px 80px;
+    }
+    #main article date, #main article footer, #main article p, #main article ul {
+        margin: 0 80px;
+    }
+    #main article p, #main article ul {
+        margin: 16px 80px;
+    }
 }
 
 /*      Tablet Large     */
-@media (max-width:1024px){
+@media (max-width:1024px)
+{
     body {
-        background-color: #eee;
+        font-size:14pt;
         background-image:none;
+        background-color:#eee;
     }
     #header, #main article, #main #prevnext, #friends {
         width: 650px;
+    }
+    #main article h1, #main article h2, #main article h3, #main article h4 {
+        margin: 5px 40px;
+    }
+    #main article date, #main article footer, #main article p, #main article ul {
+        margin: 0 40px;
+    }
+    #main article p, #main article ul {
+        margin: 16px 40px;
     }
 }
 
 @media (max-width:720px){
     #header, #main article, #main #prevnext, #friends {
-            width: 90vw;
+            width: 550px;
     }
 }
 
@@ -36,6 +67,26 @@
 
 @media only screen and (max-width: 600px)
 {    
+    body {
+        font-size:12pt;
+        background-color:#fff;
+    }
+    #header, #main article, #main #prevnext, #friends {
+        max-width:86vw;
+        border:none;
+        background-color:transparent;
+    }
+    #main article h1, #main article h2, #main article h3, #main article h4 {
+        margin: 5px 0;
+    }
+    #main article date, #main article footer, #main article p, #main article ul {
+        margin: 0 0;
+    }
+    #main article p, #main article ul {
+        margin: 16px 0;
+        text-align: left;
+    }
+
     #nav
     {
         position:static;
@@ -60,12 +111,12 @@
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     #header h1 {
         font-size: 8vw;
     }
     #header em {
-    font-size: 12px;
+    font-size: 4vw;
     }
     #footer #bytemark {
         width: 235px;
@@ -75,4 +126,3 @@
 .robots-nocontent.sd-block.sd-social.sd-social-icon.sd-sharing {
     display: none;
 }
-
