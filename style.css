@@ -1,10 +1,9 @@
 /*
-    Theme Name: Acacia Acuminata
+    Theme Name: Acacia Acuminata 2
     Theme URI: https://github.com/McrRaspJam/acacia-acuminata
-    Author: Ben Nuttall
-    Author URI: http://www.bennuttall.com/
-    Modified by: Jack Kelly
-    Description: Theme for the Manchester Raspberry Jam website
+    Author: Jack Kelly
+    Author URI: http://www.jackjkelly.com/
+    Description: Theme for the Manchester Raspberry Jam website. Originally created by Ben Nuttall.
     Version: 2.1
     License: GNU General Public License v2 or later
     License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -58,7 +57,7 @@ a {
 
 #nav .nav-holder {
     width:auto;
-    max-width: 600px;
+    max-width: 640px;
     margin: 0 auto;
 }
 
@@ -208,11 +207,12 @@ a {
 */
 
 #main article img, #main article iframe {
+    max-width:100%;
     display: block;
     margin: 4px auto !important;
 }
 
-.autoimageformat{
+article>p>img{
     width:90%;
     height:auto;
     border-radius: 4px;
