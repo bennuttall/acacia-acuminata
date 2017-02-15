@@ -28,9 +28,5 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php get_template_part('nav'); ?>
-<header id="header">
-    <h1><a href="/"><?php bloginfo('title'); ?></a></h1>
-    <em><?php bloginfo('description'); ?></em>
-</header>
-<div id="main">
+	<?php get_template_part('nav'); ?>
+	<main id="page">
