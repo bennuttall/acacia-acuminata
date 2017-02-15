@@ -1,18 +1,19 @@
+<?php get_header(); ?>
+
+<header id="header">
+	<h1><a href="/"><?php bloginfo('title'); ?></a></h1>
+	<em><?php bloginfo('description'); ?></em>
+</header>
+
 <?php
-
-get_header();
-
 if (have_posts()):
-    while (have_posts()) {
-        the_post();
-        get_template_part('post');
-    }
-    get_template_part('prevnext');
-    if (is_home()):
-        get_template_part('friends');
-    endif;
+    	while (have_posts()) {
+        	the_post();
+        	get_template_part('post');
+    	}
+   	get_template_part('prevnext');
 else:
-    get_template_part('part', '404');
-endif;
+	get_template_part('part', '404');
+endif; ?>
 
-get_footer();
+<?php get_footer(); ?>

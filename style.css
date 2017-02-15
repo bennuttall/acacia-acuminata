@@ -1,223 +1,245 @@
 /*
-    Theme Name: Acacia Acuminata
-    Theme URI: https://github.com/bennuttall/acacia-acuminata
-    Author: Ben Nuttall
-    Author URI: http://www.bennuttall.com/
-    Description: Theme for the Manchester Raspberry Jam website
-    Version: 1.0
+    Theme Name: Acacia Acuminata 2
+    Theme URI: https://github.com/McrRaspJam/acacia-acuminata
+    Author: Jack Kelly
+    Author URI: http://www.jackjkelly.com/
+    Description: Theme for the Manchester Raspberry Jam website. Originally created by Ben Nuttall.
+    Version: 2.5
     License: GNU General Public License v2 or later
     License URI: http://www.gnu.org/licenses/gpl-2.0.html
     Text Domain: mcrraspjam
 */
 
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400');
 
 body {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
-    color: #000;
-    background: #fff url('images/mcrraspjam-tiled.png') top center fixed;
-    margin: 0
+	margin:0;
+	background-color: #eee;
+	background: url(http://mcrraspjam.org.uk/wp-content/uploads/2016/10/bkg_jam.jpg) center fixed;
+	background-size: cover;
+	
+	font-family: 'Roboto', sans-serif;
+    	font-size: 14pt;
+    	font-weight:300;
+	color:#000;	
 }
 
-a:link {color: #d4264e; text-decoration: none;}
-a:visited {color: #60b22e;}
-a:hover {text-decoration: underline;}
+h1, h1 a, h2, h2 a, h3, h4, h5, h6 {
+    color:#e03e61;
+    font-weight: 400;
+}
+h1 {font-size: 2.5em; font-family: 'Oswald', sans-serif;} 
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.25em;}
+h4 {font-size: 1.1em;}
 
-h1, h2, h3, h4, h5, h6 {
-    color: #d4264e;
-    font-weight: normal;
+a {text-decoration: none;}
+
+
+/* Navbar */
+
+#nav{
+	background-color: #e03e61;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;  
+	height: 32px;
+	font-size:14pt; 
 }
 
-h1 {font-size: 36px;}
-h2 {font-size: 22px;}
-h3 {font-size: 20px;}
-h4 {font-size: 18px;}
-
-h1 a:hover {
-    text-decoration: none;
-}
-
-#nav, #header, #footer, #main article, #main #prevnext, #friends {
-    background-color: #fff;
-    background-color: rgba(255,255,255,0.9);
-    margin: 0 auto;
-}
-
-#header, #main article, #main #prevnext, #friends {
-    width: 700px;
-    padding: 20px;
-    border: 1px solid #60b22e;
-}
-
-h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
-    text-decoration: none;
-    color: #d4264e;
-    margin: 0 0 10px;
-}
-
-#nav, #footer {
-    width: 100%;
-    min-width: 740px;
-}
-
-#nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid #60b22e;
-}
-
-.logged-in #nav {
-    top: 32px;
+.logged-in #nav{
+	top: 32px;
 }
 
 #nav .nav-holder {
-    width: 740px;
-    margin: 0 auto;
+	height: 100%;
+	width: auto;
+	max-width: 768px;
+	margin: 0 auto;
 }
 
-#nav ul {
-    float: left;
-    margin: 0;
-    padding: 0;
+#nav .nav-holder>ul {
+	height: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
 }
 
-#nav ul li {
-    float: left;
-    list-style-type: none;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 4px 10px;
-    height: 22px;
+#nav .nav-holder>ul>li {
+	display: inline-block;
+	list-style-type: none;
+	letter-spacing: 1px;
+	padding: 0.2em 10px;
 }
 
-#nav ul li a, #nav ul li a:visited {
-    text-decoration: none;
-    color: #60b22e;
+#nav .nav-holder>ul>li>a, #nav .nav-holder>ul>li>a:visited {
+	text-decoration: none;
+	color: #fff;
 }
 
-#nav ul li:hover, #nav ul li:hover a,
-.home #menu-item-118, .home #menu-item-118 a,
-.archive #menu-item-118, .archive #menu-item-118 a,
-.single-post #menu-item-118, .single-post #menu-item-118 a,
-.page-id-6 #menu-item-13, .page-id-6 #menu-item-13 a,
-.page-id-8 #menu-item-12, .page-id-8 #menu-item-12 a,
-.page-id-10 #menu-item-11, .page-id-10 #menu-item-11 a,
-.page-id-37 #menu-item-38, .page-id-37 #menu-item-38 a
-{
-    color: #fff !important;
-    background: #60b22e;
+#nav .nav-holder>ul>li:hover {
+	background: #ED4267;
 }
 
 #nav #searchform {
-    float: right;
-    margin-top: 2px;
-    height: 28px;
+	float: right;
+	margin-top: 4px;
+	height: 28px;
 }
 
 #nav #searchform input {
-    border: 1px solid #60b22e;
-    height: 22px;
+	border: 1px solid #C93857;
+	border-radius:2px;
+	height: 22px;
 }
 
 #nav #searchform input[type="text"] {
-   width: 140px;
-   padding: 0 4px;
+	width: 140px;
+	padding: 0 4px;
 }
 
 #nav #searchform input[type="submit"] {
-    background: #60b22e;
-    color: #fff;
-    font-weight: bold;
+	background: #D43B5C;
+	color: #fff;
+	font-weight: bold;
 }
 
-#nav .break {
-    clear: both;
-    height: 0;
+
+/* Body & Header */
+
+main {
+	width: 35em;
+	margin: 0 auto;
+	margin-top:32px;
+	padding: 0 8em;
+
+	background-color: #fff;
+    	background-color: rgba(255,255,255,0.9);
+	border-left: 1px solid #c0c0c0;
+	border-left: 1px solid rgba(0, 0, 0, 0.25);
+	border-right: 1px solid #c0c0c0;
+	border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-#header {
-    margin-top: 40px;
-    text-align: center;
-    padding: 20px;
+#header{text-align:center;}
+#header>h1{
+	margin:0 auto;
+	margin-top: 1em;
+}
+#header>em {
+	margin:-4px auto;
+	font-size: 1.25em;
+	font-style: normal;
+	font-family: 'Oswald', sans-serif;
+	color:#777;
 }
 
-#header em {
-    font-size: 20px;
-    color: #60b22e;
+
+/* Article Header/Footer */
+
+main>article>header {margin-top:2vh;}
+main>article>header>date {font-size:0.8em; color:#777;}
+main>article>header>h2 {margin-top:0;}
+
+main>article {
+	line-height:1.35;
+	text-align: justify;
 }
 
-#main {
-    margin: 10px auto;
+main>article>footer {
+	font-size:0.8em;
+	color:#777;
+	clear: both;
+	text-align: right;
+	margin-bottom:8vh;
 }
 
-#main article {
-    margin: 10px auto;
+main>article blockquote {
+	width: 80%;
+	padding: 20px 10px;
+	font-size: 1.5em;
+	font-style: italic;
 }
 
-#main article header date, #main article footer {
-    font-size: 12px;
+
+/* Media Content */
+
+main>article img, main>article iframe {
+	max-width:100%;
+	display: block;
+	margin: 4px auto !important;
 }
 
-#main article footer {
-    clear: both;
-    text-align: right;
-}
-
-#main article p {
-    margin: 5px 0;
-}
-
-#main article blockquote {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 10px;
-    font-size: 20px;
-    text-align: justify;
-    font-style: italic;
-}
-
-#main article .aligncenter {
-    display: block;
-    margin: 0 auto;
-}
-
-#main article img, #main article iframe {
-    display: block;
-    margin: 0 auto !important;
-    padding: 20px 0;
+main>article img {
+	width:90%;
+	height:auto;
+	border-radius: 4px;
 }
 
 #main article .error404 {
-    background: url('images/mcrraspjam-rotated.png');
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
+	background: url('images/mcrraspjam-rotated.png');
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
 }
 
-#main #prevnext {
+
+/* Page footer */
+
+#footer {
+	height: 100px;
+	border-top: 1px solid #c0c0c0;
+	border-top: 1px solid rgba(0, 0, 0, 0.25);
+	text-align: center;
+	font-size: 12px;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.9);
+}
+
+#footer aside {
+    margin-top: 5px;
+}
+
+#footer aside p {
+    margin: 0;
+}
+
+#footer #bytemark {
+    background: url('images/bytemark.png');
+    height: 31px;
+    width: 411px;
+    margin: 10px auto;
+    display: block;
+    text-indent: -10000px;
+}
+
+main #prevnext {
+    font-size:0.8em;
     height: 100%;
     min-height: 20px;
     padding: 5px 20px;
 }
 
-#main #prev, #main #next {
+main #prev, #main #next {
     width: 50%;
 }
 
-#main #prev {
+main #prev {
     float: left;
 }
 
-#main #next {
+main #next {
     float: right;
     text-align: right;
 }
 
+/*
 #friends {
-    margin-top: 10px;
+    margin-top: 0px;
+    padding-top: 32px;
     text-align: center;
 }
 
@@ -246,27 +268,4 @@ h1, h1 a, h1 a:visited, h2, h2 a, h2 a:visited {
     margin: 0 auto;
     padding-bottom: 10px;
 }
-
-#footer {
-    height: 100px;
-    border-top: 1px solid #60b22e;
-    text-align: center;
-    font-size: 12px;
-}
-
-#footer aside {
-    margin-top: 5px;
-}
-
-#footer aside p {
-    margin: 0;
-}
-
-#footer #bytemark {
-    background: #fff url('images/bytemark.png');
-    height: 31px;
-    width: 411px;
-    margin: 10px auto;
-    display: block;
-    text-indent: -10000px;
-}
+*/
